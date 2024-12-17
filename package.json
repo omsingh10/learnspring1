@@ -1,0 +1,24 @@
+{
+  "name": "ocm0.1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omsingh10/learnspring1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omsingh10/learnspring1/issues"
+  },
+  "homepage": "https://github.com/omsingh10/learnspring1#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  }
+}
