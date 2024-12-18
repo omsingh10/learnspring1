@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div th>
+<div th:fragment="parent( content )">
+    <h1>hello  i am  shiv this is fargment </h1>
+    <p>mjdef  efwuifhiuwr f iewgh fuiuue gr4uirg iuhe    ;oqi3ue ifhoq33roh;kjefn'o9rjko'ijf   ijfo os,laier jnake isd  ks-jire .</p>
+   <div th:replace="${content}"></div>
 
-    </div>
-</body>
-</html>
+</div>
+
+<!-- this is xsecond fragment -->
+
+<div th:fragment="test(content)" >
+    <h1>this is test</h1>
+    <div th:replace="${content}"> </div>
+
+</div>

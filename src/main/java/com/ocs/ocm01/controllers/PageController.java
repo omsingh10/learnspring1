@@ -30,9 +30,11 @@ public class PageController {
     // double quotes are important
     public String about(Model model){
 
+        model.addAttribute("islogin" , true);
 
-        System.out.println("Home page handler");
-        model.addAttribute("name", "shiv is superhero");
+
+        System.out.println("About page handler");
+    
         model.addAttribute("Youtube practice", "learning  spring");
 
 
