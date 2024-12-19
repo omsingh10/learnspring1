@@ -11,11 +11,26 @@ xmlns:th="http://www.thymeleaf.org">
     <link rel="stylesheet" data-th-href ="@{'/css/output.css'}">
 </head>
 <body>
-<section data-th-replace="${content}">
+    <!-- Common header -->
+     <ul class="p-4">
+        <li>
+            <a data-th-href="@{'/home'}">Home</a>
+        </li>
+        <li>
+            <a data-th-href="@{'/about'}">About</a>
+        </li>
+        <li>
+            <a data-th-href="@{'/service'}">Service</a>
+        </li>
+     </ul>
 
 
 
-</section>
+
+
+<div class="p-4">
+    <section  data-th-replace="${content}"></section>
+</div>
     
 
 
