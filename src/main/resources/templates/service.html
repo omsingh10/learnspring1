@@ -1,23 +1,16 @@
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en"
+th:replace="~{base :: par(~{:: #content}, ~{:: title} ,   ~{:: script}     ) } ">
+<head>
+    <title>Service</title>
 <body>
-    <h1>this is Service</h1>
-    <hr>
+    <div id="content">
+      <h1>welcome on service page</h1>
+    </div>
     
-<div  th:replace="~{base :: parent(~{:: #vain})}">
-<section>
-    <h1>Why the fuck you are not woking last time</h1>
-    <p id="main">
-        this is me section
-    </p>
-</section>
-<h1>Why the fuck you are not woking last time</h1>
-<p id="vain">
-    this is me vain
-</p>
-
-</div>
     
 </body>
-</html> 
+<script>
+    console.log("Service page");
+</script>
+</html>

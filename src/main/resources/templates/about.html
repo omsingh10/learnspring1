@@ -1,27 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+th:replace="~{base :: par(~{:: #content}, ~{:: title} ,   ~{:: script}     ) } ">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 </head>
 <body>
-    <h1>this is About</h1>
-    <hr>
+    <div id="content">
+      <h1>hello this about page</h1>
+    </div>
     
-<div class="host-tag" th:insert="${islogin} ? ~{base :: parent(~{:: .one})} : ~{base :: test(~{  :: #notlog})}">
-<section class="one">
-    <h1>you are logged In </h1>
-    <p>
-        this is me section
-    </p>
-</section>
-
-<section id="notlog">
-    <h1> not logged In</h1>
-</section>
-
-</div>
     
 </body>
-</html> 
+<script>
+    console.log("about page");
+</script>
+
+</html>

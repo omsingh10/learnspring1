@@ -46,6 +46,8 @@ public class PageController {
 
     public String service( Model model) {
 
+        System.out.println("Service page handler");
+
 
 
         return "service";
