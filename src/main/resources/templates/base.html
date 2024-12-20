@@ -12,18 +12,11 @@ xmlns:th="http://www.thymeleaf.org">
 </head>
 <body>
     <!-- Common header -->
-     <ul class="p-4">
-        <li>
-            <a data-th-href="@{'/home'}">Home</a>
-        </li>
-        <li>
-            <a data-th-href="@{'/about'}">About</a>
-        </li>
-        <li>
-            <a data-th-href="@{'/service'}">Service</a>
-        </li>
-     </ul>
+<div data-th-replace="navbar :: navbar">
 
+    <h1 class="font-bold">This is for common Navbar if not working</h1>
+
+</div>
 
 
 
@@ -32,7 +25,8 @@ xmlns:th="http://www.thymeleaf.org">
     <section  data-th-replace="${content}"></section>
 </div>
     
-
+<!-- fotter common -->
+ <footer class="p-4"> this is fotter </footer>
 
 
 </body>
