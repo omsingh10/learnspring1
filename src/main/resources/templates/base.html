@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"
+
+    <h1 class="font-bold">This is for common Navbar if not working</h1>
+
+<html
+class=""
+
+lang="en"
 th:fragment="par(content , title , script)"
 xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -12,7 +18,7 @@ xmlns:th="http://www.thymeleaf.org">
 </head>
 <body>
     <!-- Common header -->
-<div data-th-replace="navbar :: navbar">
+<div data-th-replace="~{nav :: navbar}" class="p-1 m-1">
 
     <h1 class="font-bold">This is for common Navbar if not working</h1>
 
@@ -21,7 +27,7 @@ xmlns:th="http://www.thymeleaf.org">
 
 
 
-<div class="p-4">
+<div class="p-52 m-7" >
     <section  data-th-replace="${content}"></section>
 </div>
     

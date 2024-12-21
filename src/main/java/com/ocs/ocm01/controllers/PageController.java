@@ -53,5 +53,39 @@ public class PageController {
         return "service";
     }
     
+    @RequestMapping("/contact")
+
+    public String contact( Model model) {
+
+        System.out.println("contact page handler");
+
+
+
+        return "contact";
+    }
+
+      
+    @RequestMapping("/login")
+
+    public String login( Model model) {
+
+        System.out.println("login page handler");
+
+
+
+        return "login";
+    }
+
+      
+    @RequestMapping("/reg")
+
+    public String reg( Model model) {
+
+        System.out.println(" sign-up page handler");
+
+
+
+        return "reg";
+    }
 
 }
